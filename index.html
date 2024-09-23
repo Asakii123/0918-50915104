@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剪刀石頭布</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>剪刀石頭布</h1>
+    <div class="scoreboard">
+        <h2>玩家分數: <span id="playerScore">0</span></h2>
+        <h2>電腦分數: <span id="computerScore">0</span></h2>
+    </div>
+    <div class="choices">
+        <img src="scissors.jpeg" alt="剪刀" class="choice" onclick="play('剪刀')">
+        <img src="rock.jpeg" alt="石頭" class="choice" onclick="play('石頭')">
+        <img src="paper.jpeg" alt="布" class="choice" onclick="play('布')">
+    </div>
+    <button id="resetButton" onclick="resetScores()">重置比數</button>
+    <script src="script.js"></script>
+</body>
+</html>
